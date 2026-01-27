@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media-Integrated Event Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TC01: External CSS Linking -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Media-Integrated Event Management System</h1>
+
+    <!-- TC02: Image -->
+    <h2>Event Banner</h2>
+    <img src="assets/images/banner.jpg" alt="Event Banner">
+
+    <!-- TC03: Video -->
+    <h2>Promotional Video</h2>
+    <video controls>
+        <source src="assets/videos/promo.mp4" type="video/mp4">
+    </video>
+
+    <!-- TC04: Audio -->
+    <h2>Intro Audio</h2>
+    <audio controls>
+        <source src="assets/audio/intro.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Registration Form -->
+    <h2>Event Registration Form</h2>
+
+    <form onsubmit="return validateForm()" class="event-form">
+
+        <!-- TC05 -->
+        <label>Name</label>
+        <input type="text" id="name" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>Event Date</label>
+        <input type="date" required>
+
+        <!-- TC07 -->
+        <label>Gender</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" required> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+        </div>
+
+        <label>Event Type</label>
+        <select required>
+            <option value="">Select Event</option>
+            <option>Workshop</option>
+            <option>Seminar</option>
+            <option>Conference</option>
+        </select>
+
+        <!-- TC08 -->
+        <label>Address</label>
+        <textarea rows="3"></textarea>
+
+        <label>Upload ID Proof</label>
+        <input type="file" accept=".jpg,.png,.pdf" required>
+
+        <!-- TC09 -->
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html>

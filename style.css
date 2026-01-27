@@ -1,0 +1,98 @@
+/* TC02, TC03: Typography & Colors */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 20px;
+}
+
+/* TC02: Layout Styling */
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* TC03 */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* TC05 */
+img, video {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* TC05 + TC04 */
+.event-form {
+    display: flex;                 /* TC05: Flexbox */
+    flex-direction: column;
+}
+
+/* TC04: Spacing & Alignment */
+label {
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* TC06: Input Focus Transition */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+    transition: 0.3s;
+}
+
+/* TC07 */
+.radio-group label {
+    margin-right: 15px;
+}
+
+/* TC06: Button Hover Transition */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* TC08: Tablet */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+/* TC09: Mobile */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
